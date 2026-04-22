@@ -29,13 +29,13 @@ const teamMembers = [
   },
   {
     name: "Shihab Shahriar Rashu",
-    image: images.portrait_rashu_md,
+    image: images.portrait_shihab_md,
     title: "Web Developer",
     description: "Web developer at DevEleven-io and an integral part of the development team, with expertise in JavaScript and Python.",
     links: {
-      facebook: "https://facebook.com/mdshihabshahriar.rashu",
-      github: "https://github.com/muhammadshihab",
-      linkedin: "https://www.linkedin.com/"
+      facebook: "https://facebook.com/ss.rashu",
+      github: "https://github.com/rushdv",
+      linkedin: "https://www.linkedin.com/in/rushdv"
     }
   },
   {
