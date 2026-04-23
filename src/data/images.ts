@@ -3,6 +3,7 @@ import portrait_abid_md from '../assets/portrait_abid_md.png';
 import portrait_ragib_md from '../assets/portrait_ragib_md.png';
 import portrait_raiyan_md from '../assets/portrait_raiyan_md.png';
 import portrait_rashu_md from '../assets/portrait_rashu_md.png';
+import portrait_shihab_md from '../assets/portrait_shihab_md.png'; // arabic text avatar of rashu
 
 import css from '../assets/icons/css.png';
 import fastapi from '../assets/icons/fastapi.png';
