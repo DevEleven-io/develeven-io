@@ -41,6 +41,7 @@ const data = {
   portrait_abid_md,
   portrait_ragib_md,
   portrait_rashu_md,
+  portrait_shihab_md,
   portrait_raiyan_md,
   logo,
   react,
