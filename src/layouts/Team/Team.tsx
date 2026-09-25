@@ -7,7 +7,7 @@ const teamMembers = [
     name: "Abid Al Wassie",
     image: images.portrait_abid_md,
     title: "Web Developer",
-    description: "Senior Full-Stack Developer at DevEleven-io. Creator of oneManDev.",
+    description: "Co-Founder, Senior Full-Stack Developer at DevEleven-io. Creator of oneManDev.",
     links: {
       website: "https://abidalwassie.me",
       github: "https://github.com/AbidAlWassie",
@@ -19,7 +19,7 @@ const teamMembers = [
     name: "Ragib Al Asad",
     image: images.portrait_ragib_md,
     title: "Web Developer",
-    description: "Founder of DevEleven. Senior Backend Developer at DevEleven-io with terrible frontend skills.",
+    description: "Co-Founder of DevEleven. Senior Backend Developer at DevEleven-io with terrible frontend skills.",
     links: {
       website: "https://ragibalasad.me",
       github: "https://github.com/ragibalasad",
@@ -31,7 +31,7 @@ const teamMembers = [
     name: "Shihab Shahriar Rashu",
     image: images.portrait_shihab_md,
     title: "Web Developer",
-    description: "Web developer at DevEleven-io and an integral part of the development team, with expertise in JavaScript and Python.",
+    description: "Co-Founder of DevEleven-io and an integral part of the development team, with expertise in JavaScript and Python.",
     links: {
       facebook: "https://facebook.com/ss.rashu",
       github: "https://github.com/rushdv",
