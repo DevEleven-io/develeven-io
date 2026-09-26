@@ -80,7 +80,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#team" className="text-zinc-300 hover:text-white transition-colors inline-flex items-center gap-1 group">
+                  <Link href="/team" className="text-zinc-300 hover:text-white transition-colors inline-flex items-center gap-1 group">
                     <span>Core Team</span>
                     <ArrowUpRight className="size-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-sky-400" />
                   </Link>

@@ -23,7 +23,7 @@ const navItems = [
   { label: "Work", href: "/#work" },
   { label: "Services", href: "/#services" },
   { label: "Pricing", href: "/pricing" },
-  { label: "Team", href: "/#team" },
+  { label: "Team", href: "/team" },
   { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "/support" },
 ];
