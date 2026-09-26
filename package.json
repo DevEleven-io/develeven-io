@@ -21,7 +21,7 @@
     "convex": "^1.19.4",
     "framer-motion": "^12.4.7",
     "lucide-react": "^0.475.0",
-    "next": "15.2.1",
+    "next": "15.2.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
