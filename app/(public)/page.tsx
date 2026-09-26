@@ -397,7 +397,7 @@ export default function Home() {
               <div className="border-t border-white/10 grid grid-cols-12 py-3 sm:py-3.5 items-center">
                 <div className="col-span-4 sm:col-span-3" />
                 <div className="col-span-8 sm:col-span-9 text-right">
-                  <Link href="#team" className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-sky-400 transition-colors">
+                  <Link href="/team" className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-sky-400 transition-colors">
                     The DevEleven Team
                   </Link>
                 </div>
