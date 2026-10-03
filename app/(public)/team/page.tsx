@@ -97,7 +97,7 @@ export default function TeamPage() {
         {[TEAM_MEMBERS.slice(0, 2), TEAM_MEMBERS.slice(2, 4)].map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 mb-3 sm:mb-4 lg:mb-6 items-stretch"
+            className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 items-stretch"
           >
             {row.map((member) => (
               <div

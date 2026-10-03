@@ -141,7 +141,7 @@ export default function Home() {
         </div>
 
         {/* Row 1: Two Screen-Height Columns */}
-        <div className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 mb-3 sm:mb-4 lg:mb-6 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 items-stretch">
           {/* Column 1: Candy Pink — var(--brand-accent-1) (Frontend Development) */}
           <div className="relative rounded-4xl sm:rounded-5xl bg-brand-accent-1 text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
@@ -204,7 +204,7 @@ export default function Home() {
         </div>
 
         {/* Row 2: Two Screen-Height Columns */}
-        <div className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 mb-3 sm:mb-4 lg:mb-6 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 sm:mb-4 lg:mb-6 items-stretch">
           {/* Column 3: Mint Emerald — var(--brand-accent-3) (API Development) */}
           <div className="relative rounded-4xl sm:rounded-5xl bg-brand-accent-3 text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
@@ -300,7 +300,7 @@ export default function Home() {
 
       {/* 6. Section 04: FAQ & Platform Links Directory */}
       <section id="faq" className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 items-stretch">
           {/* Left Column: FAQ Accordion Module */}
           <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
             <div>

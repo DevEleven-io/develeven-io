@@ -172,7 +172,7 @@ export default function PricingPage() {
           </p>
         </div>
 
-        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
           {PRICING_PLANS.map((plan, idx) => {
             const hasPrice =
               plan.monthlyPrice !== null && plan.monthlyPrice > 0;
@@ -443,7 +443,7 @@ export default function PricingPage() {
 
       {/* 5. FAQ & Settlement Directory Section (Solflare 1:1 Two-Part Layout) */}
       <section id="faq" className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 items-stretch">
           {/* Left Column: FAQ Accordion Module */}
           <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
             <div>
