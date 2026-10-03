@@ -41,6 +41,13 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
+  /* Brand palette — role-based names, change values in :root to retheme the whole site */
+  --color-brand-primary:  var(--brand-primary);  /* Main brand color — hero, stats, CTA sections */
+  --color-brand-accent-1: var(--brand-accent-1); /* Service card 1  — Frontend Development       */
+  --color-brand-accent-2: var(--brand-accent-2); /* Service card 2  — Backend & Cloud            */
+  --color-brand-accent-3: var(--brand-accent-3); /* Service card 3  — API Integration            */
+  --color-brand-accent-4: var(--brand-accent-4); /* Service card 4  — Custom Product Delivery    */
+
   --radius: 0.625rem;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -52,6 +59,14 @@
 }
 
 :root {
+  /* ── Brand palette — change only the hex values here to retheme the whole site ── */
+  --brand-primary:  var(--color-cyan-400); /* Cyan                 | Main brand — hero, stats, CTA sections     */
+  --brand-accent-1: #FFA6EA; /* Candy Pink (#FFA6EA) | Service card 1 — Frontend Development      */
+  --brand-accent-2: #7F9FF6; /* Periwinkle (#7F9FF6) | Service card 2 — Backend & Cloud           */
+  --brand-accent-3: #6EE7B7; /* Mint Green (#6EE7B7) | Service card 3 — API Integration           */
+  --brand-accent-4: #a32368; /* Raspberry  (#a32368) | Service card 4 — Custom Product Delivery   */
+
+  /* ── Semantic tokens ────────────────────────────────────────────────────────── */
   --background: var(--color-zinc-50);
   --darker: var(--color-zinc-950);
   --foreground: var(--color-zinc-900);
@@ -60,7 +75,7 @@
   --card-foreground: var(--color-zinc-900);
   --popover: var(--color-white);
   --popover-foreground: var(--color-zinc-900);
-  --primary: #38bdf8;
+  --primary: var(--brand-primary);
   --primary-foreground: var(--color-zinc-950);
   --primary-text: var(--color-sky-600);
   --secondary: var(--color-zinc-100);
@@ -74,7 +89,7 @@
   --success: var(--color-emerald-600);
   --border: var(--color-zinc-200);
   --input: var(--color-zinc-200);
-  --ring: #38bdf8;
+  --ring: var(--brand-primary);
 }
 
 .dark {
@@ -86,9 +101,9 @@
   --card-foreground: var(--color-zinc-200);
   --popover: var(--color-zinc-800);
   --popover-foreground: var(--color-zinc-200);
-  --primary: #38bdf8;
+  --primary: var(--brand-primary);
   --primary-foreground: var(--color-zinc-950);
-  --primary-text: #38bdf8;
+  --primary-text: var(--brand-primary);
   --secondary: var(--color-zinc-800);
   --secondary-foreground: var(--color-zinc-200);
   --muted: var(--color-zinc-800);
@@ -100,5 +115,5 @@
   --success: var(--color-emerald-500);
   --border: color-mix(in srgb, var(--color-white) 10%, transparent);
   --input: color-mix(in srgb, var(--color-white) 15%, transparent);
-  --ring: #38bdf8;
+  --ring: var(--brand-primary);
 }

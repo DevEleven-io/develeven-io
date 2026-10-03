@@ -77,7 +77,7 @@ export default function Home() {
 
       {/* 3. Section: Key Stats (Sky/Cyan Accent Module) */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-[#38bdf8] text-zinc-950 px-6 sm:px-12 lg:px-16 py-12 sm:py-16 lg:py-20 shadow-2xl">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 px-6 sm:px-12 lg:px-16 py-12 sm:py-16 lg:py-20 shadow-2xl">
           {/* Two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -142,8 +142,8 @@ export default function Home() {
 
         {/* Row 1: Two Screen-Height Columns */}
         <div className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 mb-3 sm:mb-4 lg:mb-6 items-stretch">
-          {/* Column 1: FlameHub Soft Candy Violet/Pink #FFA6EA (Frontend Development) */}
-          <div className="relative rounded-3xl sm:rounded-4xl bg-[#FFA6EA] text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
+          {/* Column 1: Candy Pink — var(--brand-accent-1) (Frontend Development) */}
+          <div className="relative rounded-3xl sm:rounded-4xl bg-brand-accent-1 text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
             <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -172,8 +172,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Column 2: FlameHub Periwinkle Blue #7F9FF6 (Backend & Cloud Architecture) */}
-          <div className="relative rounded-3xl sm:rounded-4xl bg-[#7F9FF6] text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
+          {/* Column 2: Periwinkle Blue — var(--brand-accent-2) (Backend & Cloud Architecture) */}
+          <div className="relative rounded-3xl sm:rounded-4xl bg-brand-accent-2 text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
             <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -205,8 +205,8 @@ export default function Home() {
 
         {/* Row 2: Two Screen-Height Columns */}
         <div className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 mb-3 sm:mb-4 lg:mb-6 items-stretch">
-          {/* Column 3: Mint Emerald #6EE7B7 (API Development) */}
-          <div className="relative rounded-3xl sm:rounded-4xl bg-[#6EE7B7] text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
+          {/* Column 3: Mint Emerald — var(--brand-accent-3) (API Development) */}
+          <div className="relative rounded-3xl sm:rounded-4xl bg-brand-accent-3 text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
             <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -235,8 +235,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Column 4: Rich Raspberry #a32368 (Tailored Solutions) */}
-          <div className="relative rounded-3xl sm:rounded-4xl bg-[#a32368] text-white p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
+          {/* Column 4: Rich Raspberry — var(--brand-accent-4) (Tailored Solutions) */}
+          <div className="relative rounded-3xl sm:rounded-4xl bg-brand-accent-4 text-white p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
             <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/10 pointer-events-none z-0" />
 
@@ -267,9 +267,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Section 03: Direct Consultation Module (Cyan / Sky Canvas #38bdf8) */}
+      {/* 5. Section 03: Direct Consultation Module (Sky Canvas — var(--brand-primary)) */}
       <section id="support" className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-[#38bdf8] text-zinc-950 px-6 sm:px-12 lg:px-16 py-16 sm:py-24 lg:py-28 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 px-6 sm:px-12 lg:px-16 py-16 sm:py-24 lg:py-28 shadow-2xl text-center">
           {/* Split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -479,7 +479,7 @@ export default function Home() {
 
       {/* 7. Section: Pre-Footer CTA Canvas */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 pb-8 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-[#38bdf8] text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
           {/* Split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
