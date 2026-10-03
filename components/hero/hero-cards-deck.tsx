@@ -94,12 +94,12 @@ export function HeroCardsDeck({
               <>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <span className="size-2 rounded-full bg-[#6EE7B7]" />
+                    <span className="size-2 rounded-full bg-brand-accent-3" />
                     <span className="font-mono text-xs uppercase tracking-wider text-zinc-400 font-normal">
                       02 / Cloud &amp; APIs
                     </span>
                   </div>
-                  <Server className="size-4 text-[#6EE7B7]" />
+                  <Server className="size-4 text-brand-accent-3" />
                 </div>
 
                 <div className="my-auto space-y-3">
@@ -113,7 +113,7 @@ export function HeroCardsDeck({
                   </div>
 
                   <div className="pt-2 flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
-                    <span className="text-2xl sm:text-3xl font-bold text-[#6EE7B7] font-brand tracking-tight">
+                    <span className="text-2xl sm:text-3xl font-bold text-brand-accent-3 font-brand tracking-tight">
                       FastAPI + Node
                     </span>
                     <span className="text-sm text-zinc-300 font-normal">
@@ -123,7 +123,7 @@ export function HeroCardsDeck({
                 </div>
 
                 <div className="pt-4 flex items-center gap-2 text-xs text-zinc-300 font-normal min-w-0">
-                  <CheckCircle2 className="size-4 text-[#6EE7B7] shrink-0" />
+                  <CheckCircle2 className="size-4 text-brand-accent-3 shrink-0" />
                   <span className="truncate">Reliable &amp; scalable server architecture</span>
                 </div>
               </>

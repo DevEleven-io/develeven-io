@@ -30,7 +30,7 @@ export const SOLFLARE_HERO_SLIDES: HeroSlide[] = [
     eyebrow: "01 / WEB & SOFTWARE ENGINEERING",
     heading: "Turning ideas into high-performance digital reality",
     body: "We engineer lightning-fast websites, modern cloud applications, and elegant digital platforms with pixel-perfect design and zero bloat.",
-    bgColor: "#38bdf8", // Sky-400 (Signature button color)
+    bgColor: "var(--brand-primary)", // Sky Blue — primary/signature brand color
     isLightSlide: true,
     primaryCtaText: "Hire Us",
     primaryCtaHref: "/support",
@@ -48,7 +48,7 @@ export const SOLFLARE_HERO_SLIDES: HeroSlide[] = [
     eyebrow: "02 / ROBUST BACKEND & APIS",
     heading: "Scalable server architectures built for speed",
     body: "From custom APIs to resilient cloud services, we build secure, maintainable server backends using Node.js, Python, FastAPI, and modern databases.",
-    bgColor: "#6EE7B7", // Emerald-300 / Mint (from Core Engineering Services Card 3)
+    bgColor: "var(--brand-accent-3)", // Mint Emerald — API Integration card
     isLightSlide: true,
     primaryCtaText: "Get in Touch",
     primaryCtaHref: "/support",
@@ -66,7 +66,7 @@ export const SOLFLARE_HERO_SLIDES: HeroSlide[] = [
     eyebrow: "03 / TAILORED PRODUCT DESIGN",
     heading: "Elegant websites crafted at affordable prices",
     body: "We transform your vision into unique digital products that inspire you and your customers. High-converting UI/UX built with Next.js, React, and Tailwind CSS.",
-    bgColor: "#a32368", // Rich Raspberry / Magenta (exact color from reference image & Pre-Footer CTA)
+    bgColor: "var(--brand-accent-4)", // Rich Raspberry — Custom Product card
     isLightSlide: false,
     primaryCtaText: "Start Your Project",
     primaryCtaHref: "/support",
@@ -80,3 +80,4 @@ export const SOLFLARE_HERO_SLIDES: HeroSlide[] = [
     ],
   },
 ];
+

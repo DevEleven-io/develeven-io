@@ -302,9 +302,9 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* 4. Pre-Footer CTA Canvas (Main Brand Color #38bdf8) */}
+      {/* 4. Pre-Footer CTA Canvas (Main Brand Color — var(--brand-primary)) */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 pb-8 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-[#38bdf8] text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
           <div className="relative z-10 max-w-3xl mx-auto">
             <p className="font-mono text-xs sm:text-sm tracking-widest text-zinc-950/70 font-normal mb-4 uppercase">
               COLLABORATE WITH US
