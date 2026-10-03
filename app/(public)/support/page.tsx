@@ -86,7 +86,7 @@ export default function SupportPage() {
     <div className="flex flex-col bg-zinc-950 text-foreground min-h-screen">
       {/* 1. Hero Canvas (Cyan / Sky Accent #38bdf8) */}
       <section className="w-full px-1.5 sm:px-3 pt-2 sm:pt-3 pb-2 sm:pb-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-brand-primary text-zinc-950 px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
           {/* Two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -110,7 +110,7 @@ export default function SupportPage() {
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
         <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4 lg:gap-6 items-stretch">
           {/* Left Column (7 cols): Contact / Quote Form */}
-          <div className="lg:col-span-7 relative rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
+          <div className="lg:col-span-7 relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
             {/* Split overlay */}
             <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-white/[0.02] pointer-events-none z-0" />
 
@@ -286,7 +286,7 @@ export default function SupportPage() {
           </div>
 
           {/* Right Column (5 cols): Direct Channels & Info */}
-          <div className="lg:col-span-5 relative rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
+          <div className="lg:col-span-5 relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
             <div className="flex flex-col my-auto">
               {/* Group 1: CHANNELS */}
               <div className="border-t border-white/10 grid grid-cols-12 py-3 sm:py-3.5 items-center">
@@ -430,7 +430,7 @@ export default function SupportPage() {
 
       {/* 3. Section: FAQ Accordion */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 pb-8 bg-zinc-950">
-        <div className="w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-16 shadow-2xl">
+        <div className="w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-16 shadow-2xl">
           <div className="max-w-3xl mb-8 sm:mb-12">
             <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-normal mb-3 block">
               02 / Common Inquiries

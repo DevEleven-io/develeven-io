@@ -46,7 +46,7 @@ export default function TeamPage() {
     <div className="flex flex-col bg-zinc-950 text-foreground min-h-screen">
       {/* 1. Hero Canvas */}
       <section className="w-full px-1.5 sm:px-3 pt-2 sm:pt-3 pb-2 sm:pb-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
           <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
             <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-normal mb-3 sm:mb-4 block">
               Core Engineering Collective
@@ -102,7 +102,7 @@ export default function TeamPage() {
             {row.map((member) => (
               <div
                 key={member.id}
-                className="relative rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 xl:p-18 shadow-2xl flex flex-col justify-between text-left group hover:-translate-y-1 transition-all duration-300 min-h-[540px] lg:min-h-0"
+                className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 xl:p-18 shadow-2xl flex flex-col justify-between text-left group hover:-translate-y-1 transition-all duration-300 min-h-[540px] lg:min-h-0"
               >
                 {/* Top: Monospace Index & Role + Refined Display Name */}
                 <div>
@@ -117,7 +117,7 @@ export default function TeamPage() {
                 {/* Middle: Architectural Portrait + Bio & Tags */}
                 <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-6 sm:gap-8 lg:gap-6 xl:gap-10 items-start my-auto py-6 sm:py-8">
                   {/* Large Portrait Photo */}
-                  <div className="relative w-44 sm:w-52 lg:w-48 xl:w-56 aspect-[4/5] rounded-2xl sm:rounded-3xl overflow-hidden shrink-0 bg-zinc-800 ring-1 ring-white/10 group-hover:ring-sky-400/50 shadow-2xl transition-all duration-300">
+                  <div className="relative w-44 sm:w-52 lg:w-48 xl:w-56 aspect-[4/5] rounded-2xl sm:rounded-4xl overflow-hidden shrink-0 bg-zinc-800 ring-1 ring-white/10 group-hover:ring-sky-400/50 shadow-2xl transition-all duration-300">
                     <Image
                       src={member.image}
                       alt={member.name}
@@ -269,7 +269,7 @@ export default function TeamPage() {
 
       {/* 3. Engineering Culture & Standards Canvas */}
       <section className="w-full px-1.5 sm:px-3 py-3 sm:py-4 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white px-8 sm:px-14 lg:px-20 xl:px-24 py-16 sm:py-24 lg:py-28 xl:py-32 shadow-2xl min-h-[70vh] lg:min-h-[75vh] flex flex-col justify-between">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white px-8 sm:px-14 lg:px-20 xl:px-24 py-16 sm:py-24 lg:py-28 xl:py-32 shadow-2xl min-h-[70vh] lg:min-h-[75vh] flex flex-col justify-between">
           <div className="relative z-10 w-full max-w-screen-2xl mx-auto flex flex-col justify-between flex-1">
             <div className="max-w-3xl mb-12 sm:mb-16 lg:mb-20">
               <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-sky-400 font-semibold mb-4 sm:mb-6 block">
@@ -304,7 +304,7 @@ export default function TeamPage() {
 
       {/* 4. Pre-Footer CTA Canvas (Main Brand Color — var(--brand-primary)) */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 pb-8 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-brand-primary text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
           <div className="relative z-10 max-w-3xl mx-auto">
             <p className="font-mono text-xs sm:text-sm tracking-widest text-zinc-950/70 font-normal mb-4 uppercase">
               COLLABORATE WITH US
