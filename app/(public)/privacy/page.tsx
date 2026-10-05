@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
     <div className="flex flex-col bg-zinc-950 text-foreground min-h-screen">
       {/* 1. Hero Canvas */}
       <section className="w-full px-1.5 sm:px-3 pt-2 sm:pt-3 pb-2 sm:pb-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
           {/* Solflare two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/10 pointer-events-none z-0" />
 
@@ -84,7 +84,7 @@ export default function PrivacyPolicyPage() {
 
       {/* 2. Key Guarantees / Policy Summary Banner (Sky Canvas — var(--brand-primary)) */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 px-6 sm:px-12 lg:px-16 py-12 sm:py-16 shadow-2xl">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-brand-primary text-zinc-950 px-6 sm:px-12 lg:px-16 py-12 sm:py-16 shadow-2xl">
           {/* Solflare two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -130,7 +130,7 @@ export default function PrivacyPolicyPage() {
 
       {/* 3. Main Policy Canvas */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-14 lg:p-20 shadow-2xl">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-14 lg:p-20 shadow-2xl">
           {/* Solflare two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -458,7 +458,7 @@ export default function PrivacyPolicyPage() {
 
       {/* 4. FAQ Section */}
       <section id="faq" className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-14 lg:p-20 shadow-2xl">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-14 lg:p-20 shadow-2xl">
           {/* Solflare two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -480,7 +480,7 @@ export default function PrivacyPolicyPage() {
 
       {/* 5. Pre-Footer Support CTA (Signature Sky Canvas — var(--brand-primary)) */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 pb-8 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-brand-primary text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
           {/* Solflare two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 

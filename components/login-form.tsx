@@ -87,7 +87,7 @@ export function LoginForm({ className }: LoginFormProps) {
   return (
     <div
       className={cn(
-        "w-full max-w-[360px] sm:max-w-[400px] rounded-3xl sm:rounded-4xl bg-zinc-950/85 backdrop-blur-xl p-6 sm:p-8 shadow-2xl flex flex-col justify-center select-none",
+        "w-full max-w-[360px] sm:max-w-[400px] rounded-4xl sm:rounded-5xl bg-zinc-950/85 backdrop-blur-xl p-6 sm:p-8 shadow-2xl flex flex-col justify-center select-none",
         className,
       )}
     >

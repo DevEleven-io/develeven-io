@@ -24,14 +24,14 @@ export function FAQAccordion({ faqs }: FAQAccordionProps) {
       {faqs.map((faq, idx) => (
         <div
           key={idx}
-          className="rounded-2xl border border-white/5 bg-zinc-900/40 hover:bg-zinc-900/60 hover:border-white/10 transition-all duration-300 overflow-hidden"
+          className="border-b border-white/10 bg-zinc-900/40 hover:bg-zinc-900/60 hover:border-white/10 transition-all duration-300 overflow-hidden"
         >
           <button
             onClick={() => toggleFaq(idx)}
             className="flex w-full items-center justify-between p-5 sm:p-6 text-left cursor-pointer group"
           >
             <div className="flex items-center gap-3.5 sm:gap-4">
-              <span className="flex items-center justify-center size-8 sm:size-9 rounded-full bg-white/5 border border-white/5 text-xs font-mono font-medium text-zinc-400 group-hover:text-white transition-colors shrink-0">
+              <span className="flex items-center justify-center size-8 sm:size-9 rounded-full bg-white/5 text-xs font-mono font-medium text-zinc-400 group-hover:text-white transition-colors shrink-0">
                 {String(idx + 1).padStart(2, "0")}
               </span>
               <span className="font-brand font-semibold text-base sm:text-lg text-white group-hover:text-zinc-200 transition-colors pr-3">

@@ -331,7 +331,7 @@ export function HeroSection({
       >
         <div className="sticky top-16 sm:top-20 h-[calc(100dvh-4rem)] sm:h-[calc(100dvh-5rem)] w-full flex flex-col justify-start px-1.5 sm:px-3 pb-1.5 sm:pb-3 pt-0">
           <div
-            className="relative w-full h-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden flex items-center justify-center transition-colors duration-500 shadow-2xl"
+            className="relative w-full h-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden flex items-center justify-center transition-colors duration-500 shadow-2xl"
             style={{ backgroundColor: currentSlide.bgColor }}
           >
             {contentInner}

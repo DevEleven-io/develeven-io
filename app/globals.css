@@ -17,6 +17,11 @@
   --font-heading: var(--font-space-grotesk), system-ui, sans-serif;
   --font-mono: var(--font-mono, monospace);
 
+   /* Scale dynamically using Tailwind's 4px spacing unit */
+  --radius-4xl: calc(var(--spacing) * 8);  /* 32px */
+  --radius-5xl: calc(var(--spacing) * 10); /* 40px */
+  --radius-6xl: calc(var(--spacing) * 12); /* 48px */
+
   --color-background: var(--background);
   --color-darker: var(--darker);
   --color-foreground: var(--foreground);

@@ -57,7 +57,7 @@ export default function PricingPage() {
     <div className="flex flex-col bg-zinc-950 text-foreground min-h-screen">
       {/* 1. Hero Canvas & Billing Switcher Module */}
       <section className="w-full px-1.5 sm:px-3 pt-2 sm:pt-3 pb-2 sm:pb-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
           {/* Solflare two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/10 pointer-events-none z-0" />
 
@@ -110,7 +110,7 @@ export default function PricingPage() {
 
       {/* 2. Key Guarantees Stats Module (Cyan/Sky Accent — var(--brand-primary)) */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 px-6 sm:px-12 lg:px-16 py-12 sm:py-16 shadow-2xl">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-brand-primary text-zinc-950 px-6 sm:px-12 lg:px-16 py-12 sm:py-16 shadow-2xl">
           {/* Two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -172,7 +172,7 @@ export default function PricingPage() {
           </p>
         </div>
 
-        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-stretch">
           {PRICING_PLANS.map((plan, idx) => {
             const hasPrice =
               plan.monthlyPrice !== null && plan.monthlyPrice > 0;
@@ -196,7 +196,7 @@ export default function PricingPage() {
             return (
               <div
                 key={plan.id}
-                className={`relative rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-7 sm:p-9 lg:p-10 shadow-2xl flex flex-col justify-between ${
+                className={`relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-7 sm:p-9 lg:p-10 shadow-2xl flex flex-col justify-between ${
                   plan.popular
                     ? "ring-2 ring-primary/50"
                     : ""
@@ -372,7 +372,7 @@ export default function PricingPage() {
 
       {/* 4. Platform Feature Comparison Module */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="relative rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl">
+        <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl">
           {/* Solflare two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
@@ -443,9 +443,9 @@ export default function PricingPage() {
 
       {/* 5. FAQ & Settlement Directory Section (Solflare 1:1 Two-Part Layout) */}
       <section id="faq" className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
-        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 items-stretch">
           {/* Left Column: FAQ Accordion Module */}
-          <div className="relative rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
+          <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
             <div>
               <span className="font-mono text-xs sm:text-sm tracking-widest text-zinc-400 font-normal mb-4 block">
                 01 / Frequently asked questions
@@ -479,7 +479,7 @@ export default function PricingPage() {
           </div>
 
           {/* Right Column: Platform Directory Module */}
-          <div className="relative rounded-3xl sm:rounded-4xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
+          <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
             <div className="flex flex-col my-auto">
               {/* Group 1: PAYMENTS */}
               <div className="border-t border-white/10 grid grid-cols-12 py-3 sm:py-3.5 items-center">
@@ -640,7 +640,7 @@ export default function PricingPage() {
 
       {/* 6. Pre-Footer CTA Canvas (Signature Sky Canvas — var(--brand-primary)) */}
       <section className="w-full px-1.5 sm:px-3 py-2 sm:py-3 pb-8 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-3xl sm:rounded-4xl overflow-hidden bg-brand-primary text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-brand-primary text-zinc-950 p-10 sm:p-16 lg:p-20 shadow-2xl text-center">
           {/* Solflare two-tone vertical split overlay */}
           <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
