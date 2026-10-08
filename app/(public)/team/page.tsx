@@ -44,48 +44,15 @@ const CULTURE_PILLARS = [
 export default function TeamPage() {
   return (
     <div className="flex flex-col bg-zinc-950 text-foreground min-h-screen">
-      {/* 1. Hero Canvas */}
-      <section className="w-full px-1.5 sm:px-3 pt-2 sm:pt-3 pb-2 sm:pb-3 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white px-6 sm:px-12 lg:px-16 py-16 sm:py-24 shadow-2xl text-center">
-          <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
-            <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-normal mb-3 sm:mb-4 block">
-              Core Engineering Collective
-            </span>
-
-            <h1 className="font-brand text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.05]">
-              Architects, Engineers &amp; Builders.
-            </h1>
-
-            <p className="text-base sm:text-lg lg:text-xl text-zinc-400 font-normal leading-relaxed mb-8 sm:mb-10 max-w-3xl mx-auto">
-              DevEleven is an agile engineering organization founded and run by active developers. We engineer resilient cloud systems, performant web platforms, and refined digital experiences with uncompromising technical rigor.
-            </p>
-
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <Button
-                asChild
-                className="h-12 sm:h-14 rounded-full px-8 text-base font-semibold border-0 bg-white text-zinc-950 hover:bg-zinc-200 shadow-xl cursor-pointer transition-transform hover:scale-105"
-              >
-                <a href="#members">Meet the team</a>
-              </Button>
-              <Button
-                asChild
-                className="h-12 sm:h-14 rounded-full px-8 text-base font-semibold border-0 bg-zinc-800 hover:bg-zinc-700 text-white shadow-xl cursor-pointer"
-              >
-                <Link href="/support">Start a project</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 2. Team Members Showcase (Two Screen-Height Rows Inspried by Homepage Services Showcase) */}
       <section id="members" className="w-full px-1.5 sm:px-3 py-4 sm:py-6 bg-zinc-950">
         {/* Centered Section Header */}
         <div className="w-full max-w-screen-2xl mx-auto mb-8 sm:mb-12 text-center pt-8 sm:pt-14 px-4">
-          <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-normal mb-3 block">
-            02 / The Architects
+          <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-semibold mb-3 block">
+            01 / The Architects
           </span>
-          <h2 className="font-brand text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4 leading-[1.05]">
+          <h2 className="font-brand text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4 leading-[1.06]">
             Meet our core engineering team
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-zinc-400 font-normal max-w-2xl mx-auto leading-relaxed">
@@ -97,7 +64,7 @@ export default function TeamPage() {
         {[TEAM_MEMBERS.slice(0, 2), TEAM_MEMBERS.slice(2, 4)].map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 items-stretch"
+            className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 items-stretch"
           >
             {row.map((member) => (
               <div
@@ -106,10 +73,10 @@ export default function TeamPage() {
               >
                 {/* Top: Monospace Index & Role + Refined Display Name */}
                 <div>
-                  <span className="font-mono text-xs sm:text-sm font-semibold uppercase tracking-widest text-sky-400 mb-3 sm:mb-4 block">
+                  <span className="font-mono text-xs sm:text-sm font-semibold uppercase tracking-widest text-zinc-400 mb-3 sm:mb-4 block">
                     {member.number} / {member.role}
                   </span>
-                  <h3 className="font-brand text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white mb-2 leading-tight group-hover:text-sky-300 transition-colors">
+                  <h3 className="font-brand text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-2 leading-[1.06]">
                     {member.name}
                   </h3>
                 </div>
@@ -117,7 +84,7 @@ export default function TeamPage() {
                 {/* Middle: Architectural Portrait + Bio & Tags */}
                 <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-6 sm:gap-8 lg:gap-6 xl:gap-10 items-start my-auto py-6 sm:py-8">
                   {/* Large Portrait Photo */}
-                  <div className="relative w-44 sm:w-52 lg:w-48 xl:w-56 aspect-[4/5] rounded-2xl sm:rounded-4xl overflow-hidden shrink-0 bg-zinc-800 ring-1 ring-white/10 group-hover:ring-sky-400/50 shadow-2xl transition-all duration-300">
+                  <div className="relative w-44 sm:w-52 lg:w-48 xl:w-56 aspect-[4/5] rounded-2xl sm:rounded-4xl overflow-hidden shrink-0 bg-zinc-800 ring-1 ring-white/10 shadow-2xl transition-all duration-300">
                     <Image
                       src={member.image}
                       alt={member.name}
@@ -136,7 +103,7 @@ export default function TeamPage() {
 
                   {/* Craft Bio & Core Competencies */}
                   <div className="flex flex-col justify-center flex-1 min-w-0">
-                    <p className="text-zinc-300 text-base sm:text-lg lg:text-xl font-normal leading-relaxed">
+                    <p className="text-zinc-400 text-base sm:text-lg lg:text-xl font-normal leading-relaxed">
                       {member.bio}
                     </p>
 
@@ -144,7 +111,7 @@ export default function TeamPage() {
                       {member.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-3.5 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-mono font-medium text-zinc-300 bg-white/5 hover:bg-white/10 transition-colors"
+                          className="px-3.5 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-mono font-semibold text-zinc-400 bg-white/5 hover:bg-white/10 transition-colors"
                         >
                           {tag}
                         </span>
@@ -267,36 +234,68 @@ export default function TeamPage() {
         ))}
       </section>
 
-      {/* 3. Engineering Culture & Standards Canvas */}
+      {/* 2. Engineering Culture & Standards Canvas */}
       <section className="w-full px-1.5 sm:px-3 py-3 sm:py-4 bg-zinc-950">
-        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white px-8 sm:px-14 lg:px-20 xl:px-24 py-16 sm:py-24 lg:py-28 xl:py-32 shadow-2xl min-h-[70vh] lg:min-h-[75vh] flex flex-col justify-between">
-          <div className="relative z-10 w-full max-w-screen-2xl mx-auto flex flex-col justify-between flex-1">
+        <div className="relative w-full max-w-screen-2xl mx-auto rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-14 lg:p-16 xl:p-20 shadow-2xl">
+          {/* Two-tone split overlay — matches every other card on the site */}
+          <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
+
+          <div className="relative z-10 flex flex-col">
+            {/* Header */}
             <div className="max-w-3xl mb-12 sm:mb-16 lg:mb-20">
-              <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-sky-400 font-semibold mb-4 sm:mb-6 block">
-                03 / Principles &amp; Standards
+              <span className="font-mono text-xs sm:text-sm font-semibold uppercase tracking-widest text-zinc-400 mb-3 sm:mb-4 block">
+                02 / Principles &amp; Standards
               </span>
-              <h2 className="font-brand text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 leading-[1.05]">
+              <h2 className="font-brand text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white mb-4 sm:mb-6 leading-[1.06]">
                 How our engineering collective operates
               </h2>
-              <p className="text-base sm:text-lg lg:text-xl text-zinc-300 font-normal leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-zinc-400 font-normal leading-relaxed">
                 We believe exceptional software is engineered by small, high-density teams who own systems end-to-end without organizational friction.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 xl:gap-20 pt-10 sm:pt-14 lg:pt-16 border-t border-white/10 mt-auto">
+            {/* Pillars */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 xl:gap-20 pt-10 sm:pt-14 lg:pt-16 border-t border-white/10">
               {CULTURE_PILLARS.map((pillar) => (
                 <div key={pillar.number} className="flex flex-col">
-                  <span className="font-mono text-4xl sm:text-5xl lg:text-6xl font-bold text-sky-400/80 mb-6 sm:mb-8 block">
+                  <span className="font-mono text-5xl sm:text-6xl lg:text-7xl font-bold text-white/10 mb-6 sm:mb-8 block leading-none select-none">
                     {pillar.number}
                   </span>
-                  <h3 className="font-brand text-2xl sm:text-3xl font-bold text-white mb-4 tracking-tight leading-snug">
+                  <h3 className="font-brand text-2xl sm:text-3xl font-bold text-white mb-4 tracking-tight leading-[1.06]">
                     {pillar.title}
                   </h3>
-                  <p className="text-zinc-300 text-base sm:text-lg leading-relaxed font-normal">
+                  <p className="text-base sm:text-lg text-zinc-400 font-normal leading-relaxed">
                     {pillar.description}
                   </p>
                 </div>
               ))}
+            </div>
+
+            {/* Bottom CTA row */}
+            <div className="mt-12 sm:mt-16 lg:mt-20 pt-10 sm:pt-12 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-8">
+              <div className="grid grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
+                <div className="flex flex-col">
+                  <span className="font-brand text-3xl sm:text-4xl font-bold text-white tracking-tight leading-none mb-1.5">100%</span>
+                  <span className="font-mono text-xs font-semibold uppercase tracking-widest text-zinc-400">Code ownership</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-brand text-3xl sm:text-4xl font-bold text-white tracking-tight leading-none mb-1.5">1–4 wks</span>
+                  <span className="font-mono text-xs font-semibold uppercase tracking-widest text-zinc-400">Sprint delivery</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-brand text-3xl sm:text-4xl font-bold text-white tracking-tight leading-none mb-1.5">0%</span>
+                  <span className="font-mono text-xs font-semibold uppercase tracking-widest text-zinc-400">Hidden fees</span>
+                </div>
+              </div>
+              <Button
+                asChild
+                className="h-12 sm:h-14 rounded-full px-8 text-base font-semibold border-0 bg-white text-zinc-950 hover:bg-zinc-200 shadow-xl cursor-pointer transition-transform hover:scale-105 inline-flex items-center gap-2.5 shrink-0"
+              >
+                <Link href="/support">
+                  <span>Start a project</span>
+                  <ArrowRight className="size-4" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>

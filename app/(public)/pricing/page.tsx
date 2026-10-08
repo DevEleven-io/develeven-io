@@ -441,50 +441,58 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* 5. FAQ & Settlement Directory Section (Solflare 1:1 Two-Part Layout) */}
+      {/* 5. FAQ & Settlement Directory Section */}
       <section id="faq" className="w-full px-1.5 sm:px-3 py-2 sm:py-3 bg-zinc-950">
         <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 items-stretch">
           {/* Left Column: FAQ Accordion Module */}
           <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
             <div>
-              <span className="font-mono text-xs sm:text-sm tracking-widest text-zinc-400 font-normal mb-4 block">
-                01 / Frequently asked questions
+              <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-semibold mb-4 block text-center">
+                01 / Frequently Asked Questions
               </span>
-              <h2 className="font-brand text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 leading-[1.08]">
-                Answers about plans &amp; billing
+              <h2 className="font-brand text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-8 leading-[1.06] text-center">
+                FAQ
               </h2>
-              <p className="text-base sm:text-lg text-zinc-400 font-normal leading-relaxed mb-8">
-                Everything you need to know about Solana Pay subscriptions, plan upgrades, and non-custodial crypto checkout.
-              </p>
               <div>
                 <FAQAccordion faqs={PRICING_FAQS} />
               </div>
             </div>
 
-            {/* Bottom Actions: Matching Solflare's 2 pill buttons */}
+            {/* Bottom Actions */}
             <div className="pt-8 mt-auto flex flex-wrap items-center justify-center gap-3 sm:gap-4">
               <Link
-                href="/signin"
+                href="/support"
                 className="h-12 sm:h-14 rounded-full px-8 text-base font-semibold bg-zinc-800 hover:bg-zinc-700 text-white inline-flex items-center justify-center transition-colors shadow-md min-w-40 sm:min-w-48 text-center"
               >
-                Start earning
+                Hire our team
               </Link>
               <Link
-                href="/signin"
+                href="#"
                 className="h-12 sm:h-14 rounded-full px-8 text-base font-semibold bg-zinc-800 hover:bg-zinc-700 text-white inline-flex items-center justify-center transition-colors shadow-md min-w-40 sm:min-w-48 text-center"
               >
-                Launch campaign
+                View plans
               </Link>
             </div>
           </div>
 
           {/* Right Column: Platform Directory Module */}
           <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
-            <div className="flex flex-col my-auto">
+            {/* Card header */}
+            <div className="mb-6 sm:mb-8">
+              <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-semibold mb-2 block">
+                Quick links
+              </span>
+              <h3 className="font-brand text-xl sm:text-2xl font-bold tracking-tight text-white leading-snug">
+                Navigate DevEleven
+              </h3>
+            </div>
+
+            {/* Main Links Groups with Clean Dividers */}
+            <div className="flex flex-col flex-1 justify-center">
               {/* Group 1: PAYMENTS */}
               <div className="border-t border-white/10 grid grid-cols-12 py-3 sm:py-3.5 items-center">
                 <div className="col-span-4 sm:col-span-3">
-                  <span className="font-mono text-xs uppercase tracking-widest text-zinc-400 font-medium">
+                  <span className="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">
                     PAYMENTS
                   </span>
                 </div>
@@ -516,7 +524,7 @@ export default function PricingPage() {
               {/* Group 2: SECURITY */}
               <div className="border-t border-white/10 grid grid-cols-12 py-3 sm:py-3.5 items-center mt-3 sm:mt-5">
                 <div className="col-span-4 sm:col-span-3">
-                  <span className="font-mono text-xs uppercase tracking-widest text-zinc-400 font-medium">
+                  <span className="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">
                     SECURITY
                   </span>
                 </div>
@@ -539,14 +547,14 @@ export default function PricingPage() {
               {/* Group 3: SUPPORT */}
               <div className="border-t border-white/10 grid grid-cols-12 py-3 sm:py-3.5 items-center mt-3 sm:mt-5">
                 <div className="col-span-4 sm:col-span-3">
-                  <span className="font-mono text-xs uppercase tracking-widest text-zinc-400 font-medium">
+                  <span className="font-mono text-xs uppercase tracking-widest text-zinc-400 font-semibold">
                     SUPPORT
                   </span>
                 </div>
                 <div className="col-span-8 sm:col-span-9 text-right">
                   <Link
                     href="/support"
-                    className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-sky-400 transition-colors cursor-pointer"
+                    className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-zinc-400 transition-colors cursor-pointer"
                   >
                     24/7 Live ticket
                   </Link>
@@ -560,7 +568,7 @@ export default function PricingPage() {
                     href="https://github.com/DEVELEVEN-io"
                     target="_blank"
                     rel="noreferrer"
-                    className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-sky-400 transition-colors"
+                    className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-zinc-400 transition-colors"
                   >
                     GitHub @DEVELEVEN-io
                   </a>
@@ -572,7 +580,7 @@ export default function PricingPage() {
                 <div className="col-span-8 sm:col-span-9 text-right">
                   <Link
                     href="/privacy"
-                    className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-sky-400 transition-colors"
+                    className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-zinc-400 transition-colors"
                   >
                     Privacy Policy
                   </Link>
@@ -584,7 +592,7 @@ export default function PricingPage() {
                 <div className="col-span-8 sm:col-span-9 text-right">
                   <Link
                     href="/terms"
-                    className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-sky-400 transition-colors"
+                    className="font-brand text-base sm:text-lg lg:text-xl font-bold text-white hover:text-zinc-400 transition-colors"
                   >
                     Terms of Service
                   </Link>

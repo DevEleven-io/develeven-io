@@ -141,7 +141,7 @@ export default function Home() {
         </div>
 
         {/* Row 1: Two Screen-Height Columns */}
-        <div className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 items-stretch">
           {/* Column 1: Candy Pink — var(--brand-accent-1) (Frontend Development) */}
           <div className="relative rounded-4xl sm:rounded-5xl bg-brand-accent-1 text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
@@ -204,7 +204,7 @@ export default function Home() {
         </div>
 
         {/* Row 2: Two Screen-Height Columns */}
-        <div className="w-full max-w-screen-2xl mx-auto min-h-[85vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 sm:mb-4 lg:mb-6 items-stretch">
+        <div className="w-full max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 mb-3 sm:mb-4 lg:mb-6 items-stretch">
           {/* Column 3: Mint Emerald — var(--brand-accent-3) (API Development) */}
           <div className="relative rounded-4xl sm:rounded-5xl bg-brand-accent-3 text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
@@ -235,26 +235,26 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Column 4: Rich Raspberry — var(--brand-accent-4) (Tailored Solutions) */}
-          <div className="relative rounded-4xl sm:rounded-5xl bg-brand-accent-4 text-white p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
+          {/* Column 4: Warm Yellow — var(--brand-accent-4) (Tailored Solutions) */}
+          <div className="relative rounded-4xl sm:rounded-5xl bg-brand-accent-4 text-zinc-950 p-8 sm:p-14 lg:p-16 xl:p-20 flex flex-col justify-center text-left overflow-hidden shadow-2xl min-h-[480px] lg:min-h-0">
             {/* Split overlay */}
-            <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/10 pointer-events-none z-0" />
+            <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-black/5 pointer-events-none z-0" />
 
             {/* Vertically Centered Typography & CTA */}
             <div className="relative z-10 max-w-xl">
-              <span className="font-mono text-xs sm:text-sm font-semibold uppercase tracking-widest text-pink-200 mb-3 sm:mb-4 block">
+              <span className="font-mono text-xs sm:text-sm font-semibold uppercase tracking-widest text-zinc-950/70 mb-3 sm:mb-4 block">
                 04 / Custom Product Delivery
               </span>
-              <h3 className="font-brand text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white mb-4 sm:mb-6 leading-[1.06]">
+              <h3 className="font-brand text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-zinc-950 mb-4 sm:mb-6 leading-[1.06]">
                 From concept to deployment with zero slop
               </h3>
-              <p className="text-base sm:text-lg lg:text-xl text-white/90 font-normal leading-relaxed mb-8 sm:mb-10">
+              <p className="text-base sm:text-lg lg:text-xl text-zinc-900/80 font-normal leading-relaxed mb-8 sm:mb-10">
                 We work alongside you in rapid iterative sprints. Clean code, automated test suites, transparent progress updates, and dedicated support every step of the journey.
               </p>
               <div>
                 <Button
                   asChild
-                  className="h-12 sm:h-14 rounded-full px-8 text-base font-semibold border-0 bg-white text-zinc-950 hover:bg-zinc-100 shadow-xl cursor-pointer transition-transform hover:scale-105 inline-flex items-center gap-2.5"
+                  className="h-12 sm:h-14 rounded-full px-8 text-base font-semibold border-0 bg-zinc-950 text-white hover:bg-black shadow-xl cursor-pointer transition-transform hover:scale-105 inline-flex items-center gap-2.5"
                 >
                   <Link href="/support">
                     <span>Get a project quote</span>
@@ -304,15 +304,12 @@ export default function Home() {
           {/* Left Column: FAQ Accordion Module */}
           <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
             <div>
-              <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-normal mb-4 block">
+              <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-semibold mb-4 block text-center">
                 03 / Frequently Asked Questions
               </span>
-              <h2 className="font-brand text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4 leading-[1.08]">
-                Answers to common questions
+              <h2 className="font-brand text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-8 leading-[1.06] text-center">
+                FAQ
               </h2>
-              <p className="text-base sm:text-lg text-zinc-400 font-normal leading-relaxed mb-8">
-                Everything you need to know about our engineering process, pricing tiers, and delivery standards.
-              </p>
               <div>
                 <FAQAccordion faqs={LANDING_FAQS} />
               </div>
@@ -337,8 +334,18 @@ export default function Home() {
 
           {/* Right Column: Organization Directory Module */}
           <div className="relative rounded-4xl sm:rounded-5xl overflow-hidden bg-zinc-900 text-white p-8 sm:p-12 lg:p-14 shadow-2xl flex flex-col justify-between">
+            {/* Card header */}
+            <div className="mb-6 sm:mb-8">
+              <span className="font-mono text-xs sm:text-sm uppercase tracking-widest text-zinc-400 font-semibold mb-2 block">
+                Quick links
+              </span>
+              <h3 className="font-brand text-xl sm:text-2xl font-bold tracking-tight text-white leading-snug">
+                Navigate DevEleven
+              </h3>
+            </div>
+
             {/* Main Links Groups with Clean Dividers */}
-            <div className="flex flex-col my-auto">
+            <div className="flex flex-col flex-1 justify-center">
               {/* Group 1: SERVICES */}
               <div className="border-t border-white/10 grid grid-cols-12 py-3 sm:py-3.5 items-center">
                 <div className="col-span-4 sm:col-span-3">
