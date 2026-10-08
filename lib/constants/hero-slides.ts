@@ -66,8 +66,8 @@ export const SOLFLARE_HERO_SLIDES: HeroSlide[] = [
     eyebrow: "03 / TAILORED PRODUCT DESIGN",
     heading: "Elegant websites crafted at affordable prices",
     body: "We transform your vision into unique digital products that inspire you and your customers. High-converting UI/UX built with Next.js, React, and Tailwind CSS.",
-    bgColor: "var(--brand-accent-4)", // Rich Raspberry — Custom Product card
-    isLightSlide: false,
+    bgColor: "var(--brand-accent-4)", // Warm Yellow — Custom Product card
+    isLightSlide: true,
     primaryCtaText: "Start Your Project",
     primaryCtaHref: "/support",
     secondaryCtaText: "Explore Pricing",

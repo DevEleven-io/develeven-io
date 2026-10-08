@@ -167,7 +167,7 @@ export default function Navbar() {
                   >
                     <a
                       href="mailto:contact@develeven.io"
-                      className="text-sm sm:text-base font-normal text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer text-left"
+                      className="text-sm sm:text-base font-semibold text-white hover:text-zinc-400 transition-colors duration-200 cursor-pointer text-left"
                     >
                       contact@develeven.io
                     </a>
@@ -175,28 +175,28 @@ export default function Navbar() {
                       href="https://github.com/DEVELEVEN-io"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm sm:text-base font-normal text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer text-left"
+                      className="text-sm sm:text-base font-semibold text-white hover:text-zinc-400 transition-colors duration-200 cursor-pointer text-left"
                     >
                       GitHub @DEVELEVEN-io
                     </a>
                     <Link
                       href="/support"
                       onClick={() => setDropdownOpen(false)}
-                      className="text-sm sm:text-base font-normal text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer text-left"
+                      className="text-sm sm:text-base font-semibold text-white hover:text-zinc-400 transition-colors duration-200 cursor-pointer text-left"
                     >
                       Request a Project Quote
                     </Link>
                     <Link
                       href="/terms"
                       onClick={() => setDropdownOpen(false)}
-                      className="text-sm sm:text-base font-normal text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer text-left"
+                      className="text-sm sm:text-base font-semibold text-white hover:text-zinc-400 transition-colors duration-200 cursor-pointer text-left"
                     >
                       Terms of Service
                     </Link>
                     <Link
                       href="/privacy"
                       onClick={() => setDropdownOpen(false)}
-                      className="text-sm sm:text-base font-normal text-white hover:text-sky-400 transition-colors duration-200 cursor-pointer text-left"
+                      className="text-sm sm:text-base font-semibold text-white hover:text-zinc-400 transition-colors duration-200 cursor-pointer text-left"
                     >
                       Privacy Policy
                     </Link>
@@ -305,7 +305,7 @@ export default function Navbar() {
                           <div className="flex flex-col gap-1 pl-4 py-2 animate-fade-in">
                             <a
                               href="mailto:contact@develeven.io"
-                              className="px-3 py-2 text-base font-normal text-white hover:text-sky-400 transition-colors"
+                              className="px-3 py-2 text-base font-semibold text-white hover:text-zinc-400 transition-colors"
                             >
                               contact@develeven.io
                             </a>
@@ -313,28 +313,28 @@ export default function Navbar() {
                               href="https://github.com/DEVELEVEN-io"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="px-3 py-2 text-base font-normal text-white hover:text-sky-400 transition-colors"
+                              className="px-3 py-2 text-base font-semibold text-white hover:text-zinc-400 transition-colors"
                             >
                               GitHub @DEVELEVEN-io
                             </a>
                             <Link
                               href="/support"
                               onClick={() => setSheetOpen(false)}
-                              className="px-3 py-2 text-base font-normal text-white hover:text-sky-400 transition-colors"
+                              className="px-3 py-2 text-base font-semibold text-white hover:text-zinc-400 transition-colors"
                             >
                               Request a Quote
                             </Link>
                             <Link
                               href="/terms"
                               onClick={() => setSheetOpen(false)}
-                              className="px-3 py-2 text-base font-normal text-white hover:text-sky-400 transition-colors"
+                              className="px-3 py-2 text-base font-semibold text-white hover:text-zinc-400 transition-colors"
                             >
                               Terms of Service
                             </Link>
                             <Link
                               href="/privacy"
                               onClick={() => setSheetOpen(false)}
-                              className="px-3 py-2 text-base font-normal text-white hover:text-sky-400 transition-colors"
+                              className="px-3 py-2 text-base font-semibold text-white hover:text-zinc-400 transition-colors"
                             >
                               Privacy Policy
                             </Link>
